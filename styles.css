@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    /*
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    */
+}
+
+/*Entire adoptation Body Elements*/
+
+/*Single adoptation DIV Containers*/
+
+/* Bujar*/
+.Header{
+    border: 1px solid red;
+    padding: 50px;
+}
+
+.Approach{
+    border: 1px solid red;
+    padding: 50px;
+}
+
+/* Genti*/
+.Dedication{
+    border: 1px solid red;
+    padding: 50px;
+}
+
+.Services{
+    border: 1px solid red;
+    padding: 50px;
+}
+
+.Technologies{
+    border: 1px solid red;
+    padding: 50px;
+}
+
+/* Adisa*/
+.Products{
+    border: 1px solid red;
+    padding: 50px;
+}
+
+.Portfolio{
+    border: 1px solid red;
+    padding: 50px;
+}
+
+.Contact{
+    border: 1px solid red;
+    padding: 50px;
+}
