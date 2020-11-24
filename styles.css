@@ -14,15 +14,73 @@ body{
     .approach-left-col{
         position: relative !important;
     }
-
     .approach-header{
       font-size: 30px !important;
     }
-
     .approach-paragraph{
         font-size: 22.5px !important;
     }
 
+    .h1-white {
+      font-size: 20px;
+    }
+    .footer-header {
+      font-size: 25px;
+      padding: unset;
+    }
+    .footer-paragraph {
+      font-size: 15px;
+    }
+    .footer-followus {
+      font-size: 20px;
+      padding: unset;
+    }
+    .footer-button {
+      max-width: 100%;
+      padding: unset;
+    }
+    .footer-icon {
+      font-size: 10px;
+      padding: 1%;
+    }
+    .form-row {
+      max-width: 100%;
+      padding-top: 10px;
+    }
+
+    .card-title {
+      font-size: 25px;
+    }
+    .card-text {
+      font-size: 20px;
+    }
+    .card {
+      max-width: 100%;
+    }
+
+    .carousel-h2 {
+      font-size: 17.5px;
+      padding-left: unset;
+    }
+    .carousel-h1 {
+      font-size: 17.5px;
+    }
+    .carousel-paragraph {
+      font-size: 15px;
+      padding-left: unset;
+    }
+    .carousel-image {
+      max-width: 50%;
+    }
+    .bullets li {
+      width: 5px;
+      height: 5px;
+      border: medium none;
+      cursor: pointer;
+      display: inline-block;
+      float: none;
+      border-radius: 1000px;
+    }
 }
 
 @media screen and (max-width: 1024px){
@@ -40,6 +98,16 @@ body{
 
     .approach-img{
         display: none !important;
+    }
+
+    .card-title {
+      font-size: 15px;
+    }
+    .card-text {
+      font-size: 10px;
+    }
+    .card {
+      max-width: 100%;
     }
 }
 
@@ -301,20 +369,169 @@ padding-top: 3px;
 }
 }
 
+@media screen and (max-width: 900px) {
+	.carousel-h2 {
+		font-size: 25.5px;
+		padding-left: unset;
+	}
+	.carousel-h1 {
+		font-size: 25.5px;
+	}
+	.carousel-paragraph {
+		font-size: 20px;
+		padding-left: unset;
+	}
+	.carousel-image {
+		max-width: 100%;
+	}
+}
 
 
 /* Adisa*/
-.Products{
-    border: 1px solid red;
-    padding: 50px;
+
+.Products {
+	border: 1px solid red;
+	background-color: #fff0f4;
+	padding: 20px;
 }
 
-.Portfolio{
-    border: 1px solid red;
-    padding: 50px;
+.carousel-h1 {
+	text-align: center;
+	font: normal normal bold 35px/60px Segoe UI;
+	letter-spacing: 0px;
+	color: #D31338;
+	opacity: 1;
+	padding-bottom: 37px;
 }
 
-.Contact{
-    border: 1px solid red;
-    padding: 50px;
+.carousel-h2 {
+	text-align: left;
+	font: normal normal 600 35 px/67px Segoe UI;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+	padding-left: 44px;
+}
+
+.h1-white {
+	text-align: center;
+	font: normal normal bold 35px/60px Segoe UI;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	opacity: 1;
+	padding-bottom: 4%;
+}
+
+.carousel-paragraph {
+	width: 100%;
+	text-align: left;
+	font: normal normal 20px/40px Segoe UI Emoji;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+	padding-left: 44px;
+}
+
+.carousel-image {
+	width: 100%;
+	height: 100%;
+	border-radius: 2%;
+}
+
+.bullets {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+
+.bullets li {
+	background-color:  #dd0141;
+	border: medium none;
+	cursor: pointer;
+	display: inline-block;
+	float: none;
+	height: 10px;
+	width: 10px;
+}
+
+.bullets li:last-child {
+	margin-right: 0;
+}
+
+.bullets li {
+	border-radius: 1000px;
+}
+
+
+.Portfolio {
+	border: 1px solid red;
+	padding: 20px;
+}
+
+.card {
+	height: 100%;
+	text-align: center;
+}
+
+.card-title {
+	color: white;
+}
+
+.card-text {
+	font-size: 20px;
+	color: white;
+	max-width: fit-content;
+}
+
+
+.Contact {
+	border: 1px solid red;
+	padding: 20px;
+}
+
+.footer-header {
+	text-align: center;
+	font: normal bold 30px/67px Segoe UI;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	opacity: 1;
+}
+
+.footer-paragraph {
+	text-align: left;
+	font: italic normal normal 20px/40px Segoe UI;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+}
+
+.footer-followus {
+	text-align: left;
+	font: normal normal 30px/40px Segoe UI;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	opacity: 1;
+}
+
+.footer-button {
+	background-color: #FFA200;
+	color: white;
+}
+
+.bg {
+	/* The image used */
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url("images/IMGFooter/Footer.jpg");
+}
+
+.footer-icon {
+	color: white;
+}
+
+i.fa {
+	display: inline-block;
+	border-radius: 60px;
+	border: solid 2px #ffffff;
+	padding: 0.5em 0.6em;
 }
