@@ -6,25 +6,98 @@
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-    /*
-    background-color: #ffffff !important;
-    color: #000000 !important;
-    */
 }
 
 /*Entire adoptation Body Elements*/
 
+@media screen and (max-width: 600px){
+    .approach-left-col{
+        position: relative !important;
+    }
+
+    .approach-header{
+      font-size: 30px !important;
+    }
+
+    .approach-paragraph{
+        font-size: 22.5px !important;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+    .approach-left-col{
+        position: relative !important;
+    }
+
+    .approach-header{
+        font-size: 30px !important;
+    }
+
+    .approach-paragraph{
+        font-size: 22.5px !important;
+    }
+
+    .approach-img{
+        display: none !important;
+    }
+}
+
 /*Single adoptation DIV Containers*/
 
 /* Bujar*/
-.Header{
-    border: 1px solid red;
-    padding: 50px;
+#nav-bar .navbar{
+    min-height: 138px;
+    background-color: #d31338 !important;
+    padding: 0px 60px 0px 60px;
 }
 
-.Approach{
-    border: 1px solid red;
-    padding: 50px;
+.navbar-brand img {
+    width: 153px;
+    height: 44px;
+}
+
+.navbar-nav li {
+    padding: 0px 0px 0px 39px;
+}
+
+.navbar-nav li a {
+    color: #ffffff !important;
+    font-size: 20px;
+    float: right;
+    text-align: left;
+}
+
+.approach-left-col{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.approach-header{
+    width: 650px;
+    color: #CF053E !important;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.approach-paragraph{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.approach-read-more{
+    color: #9E9E9E !important;
+    font-size:18px;
+    text-decoration-line: none !important;
+}
+
+.approach-img{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    height: 100%;
 }
 
 /* Genti*/
