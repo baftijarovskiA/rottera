@@ -10,119 +10,19 @@ body{
 
 /*Entire adoptation Body Elements*/
 
-@media screen and (max-width: 600px){
-    .approach-left-col{
-        position: relative !important;
-    }
-    .approach-header{
-      font-size: 30px !important;
-    }
-    .approach-paragraph{
-        font-size: 22.5px !important;
-    }
-
-    .h1-white {
-      font-size: 20px;
-    }
-    .footer-header {
-      font-size: 25px;
-      padding: unset;
-    }
-    .footer-paragraph {
-      font-size: 15px;
-    }
-    .footer-followus {
-      font-size: 20px;
-      padding: unset;
-    }
-    .footer-button {
-      max-width: 100%;
-      padding: unset;
-    }
-    .footer-icon {
-      font-size: 10px;
-      padding: 1%;
-    }
-    .form-row {
-      max-width: 100%;
-      padding-top: 10px;
-    }
-
-    .card-title {
-      font-size: 25px;
-    }
-    .card-text {
-      font-size: 20px;
-    }
-    .card {
-      max-width: 100%;
-    }
-
-    .carousel-h2 {
-      font-size: 17.5px;
-      padding-left: unset;
-    }
-    .carousel-h1 {
-      font-size: 17.5px;
-    }
-    .carousel-paragraph {
-      font-size: 15px;
-      padding-left: unset;
-    }
-    .carousel-image {
-      max-width: 50%;
-    }
-    .bullets li {
-      width: 5px;
-      height: 5px;
-      border: medium none;
-      cursor: pointer;
-      display: inline-block;
-      float: none;
-      border-radius: 1000px;
-    }
-}
-
-@media screen and (max-width: 1024px){
-    .approach-left-col{
-        position: relative !important;
-    }
-
-    .approach-header{
-        font-size: 30px !important;
-    }
-
-    .approach-paragraph{
-        font-size: 22.5px !important;
-    }
-
-    .approach-img{
-        display: none !important;
-    }
-
-    .card-title {
-      font-size: 15px;
-    }
-    .card-text {
-      font-size: 10px;
-    }
-    .card {
-      max-width: 100%;
-    }
-}
-
 /*Single adoptation DIV Containers*/
 
 /* Bujar*/
+
 #nav-bar .navbar{
     min-height: 138px;
     background-color: #d31338 !important;
-    padding: 0px 60px 0px 60px;
+    padding-right: 30px;
 }
 
 .navbar-brand img {
-    width: 153px;
-    height: 44px;
+    width: 150px;
+    height: 48px;
 }
 
 .navbar-nav li {
@@ -131,9 +31,23 @@ body{
 
 .navbar-nav li a {
     color: #ffffff !important;
-    font-size: 20px;
+    font-size: 18px;
     float: right;
     text-align: left;
+}
+
+.navbar-light .navbar-toggler{
+    border: none;
+    color: #d31338;
+}
+
+.navbar-toggler{
+    border:none !important;
+    outline: none !important;
+}
+
+.fa-bars{
+    color: white;
 }
 
 .approach-left-col{
@@ -250,8 +164,6 @@ background-color: #dd0141 !important;
   color: #D31338;
 }
 
-/* Technologies classes/id/divs */
-
 .Technologies{
     /* padding: 50px; */
 }
@@ -299,96 +211,7 @@ background-color: #dd0141 !important;
 
 }
 
-/*Media queries*/
-/*Replacing Carousel in 765px with the mobileServices class*/
-
-@media only screen and (max-width: 768px){
-#carouselExampleIndicators{
-  visibility: hidden;
-  height: 0px;
-}
-
-.mobileServices{
-  visibility: visible;
-  height: auto;
-}
-
-.img-thumbnail{
- background-color: #fff0f5 !important;
- border: 4px solid #d31338 !important;
- border-radius: 1.25rem !important;
- margin-bottom: 15px;
-}
-.img-thumbnail:hover{
-  background-color: #F8D3D9 !important
-}
-}
-
-@media only screen and (max-width: 575px){
-  .img-thumbnail{
-    padding: 2.25rem !important;
-    border: 0px !important;
-  }
-  .red-regular-mobile{
-    font-size: 28px;
-    margin-bottom: 30px;
-  }
-}
-
-@media only screen and (max-width: 499px){
-  #technologiesText{
-    padding-left: 43px;
-  }
-  .technologiesForm {
-    margin-bottom: 45px;
-  }
-  .white-regular {
-    padding-bottom: 25px;
-    font-size: 25px;
-}
-
-.white-bold {
-    font-size: 30px;
-    padding-bottom: 30px;
-}
-
-.paragraph-white {
-    font-size: 16px;
-    font-weight: 350;
-}
-.Dedication {
-padding-bottom:0px;
-}
-.red-regular-Technologies {
-font-size: 25px;
-padding-bottom: 25px;
-padding-top: 3px;
-}
-.red-regular-mobile {
-    font-size: 25px;
-}
-}
-
-@media screen and (max-width: 900px) {
-	.carousel-h2 {
-		font-size: 25.5px;
-		padding-left: unset;
-	}
-	.carousel-h1 {
-		font-size: 25.5px;
-	}
-	.carousel-paragraph {
-		font-size: 20px;
-		padding-left: unset;
-	}
-	.carousel-image {
-		max-width: 100%;
-	}
-}
-
-
 /* Adisa*/
-
 .Products {
 	border: 1px solid red;
 	background-color: #fff0f4;
@@ -535,3 +358,252 @@ i.fa {
 	border: solid 2px #ffffff;
 	padding: 0.5em 0.6em;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px){
+    .approach-left-col{
+        position: relative !important;
+    }
+
+    .approach-header{
+        font-size: 30px !important;
+    }
+
+    .approach-paragraph{
+        font-size: 22.5px !important;
+    }
+
+    .approach-img{
+        display: none !important;
+    }
+
+    .card-title {
+      font-size: 15px;
+    }
+    .card-text {
+      font-size: 10px;
+    }
+    .card {
+      max-width: 100%;
+    }
+  }
+
+@media screen and (max-width: 900px) {
+    .carousel-h2 {
+        font-size: 25.5px;
+        padding-left: unset;
+    }
+    .carousel-h1 {
+        font-size: 25.5px;
+    }
+    .carousel-paragraph {
+        font-size: 20px;
+        padding-left: unset;
+    }
+    .carousel-image {
+        max-width: 100%;
+    }
+  }
+
+@media only screen and (max-width: 768px){
+   .approach-header{
+    padding-bottom: 30px;
+    }
+    
+    .approach-paragraph {
+        font-size: 22px !important;
+        padding-bottom: 30px;
+    }
+
+    .white-bold {
+        font-size: 30px;
+    }
+    
+    .paragraph-white {
+        font-size: 22px;
+        padding-bottom: 0px;
+    }
+
+    .Dedication{
+        padding-bottom: 30px;
+    }
+
+    .white-regular {
+        padding-bottom: 30px;
+        font-size: 30px;
+    }
+
+    .white-bold {
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+
+    .Services {
+        padding: 30px;
+    }
+
+    .red-regular-Technologies {
+        font-size:30px;
+        padding-bottom:30px;
+        padding-top:30px;
+    }
+
+    .technologiesForm {
+        margin-bottom:30px
+    }
+
+    #carouselExampleIndicators{
+        visibility: hidden;
+        height: 0px;
+    }
+    
+    .mobileServices{
+        visibility: visible;
+        height: auto;
+    }
+    
+    .img-thumbnail{
+        background-color: #fff0f5 !important;
+        border: 4px solid #d31338 !important;
+        border-radius: 1.25rem !important;
+        margin-bottom: 15px;
+    }
+
+    .img-thumbnail:hover{
+        background-color: #F8D3D9 !important
+    }
+  }
+
+@media screen and (max-width: 600px){
+    .approach-left-col{
+        position: relative !important;
+    }
+
+    .approach-header{
+      font-size: 26px !important;
+    }
+
+    .approach-paragraph{
+        font-size: 16px !important;
+        font-weight: 350 !important;
+    }
+
+    .approach-read-more{
+        font-size: 14px !important;
+    }
+
+    .h1-white {
+      font-size: 20px;
+    }
+
+    .footer-header {
+      font-size: 25px;
+      padding: unset;
+    }
+
+    .footer-paragraph {
+      font-size: 15px;
+    }
+
+    .footer-followus {
+      font-size: 20px;
+      padding: unset;
+    }
+
+    .footer-button {
+      max-width: 100%;
+      padding: unset;
+    }
+
+    .footer-icon {
+      font-size: 10px;
+      padding: 1%;
+    }
+
+    .form-row {
+      max-width: 100%;
+      padding-top: 10px;
+    }
+
+    .card-title {
+      font-size: 25px;
+    }
+
+    .card-text {
+      font-size: 20px;
+    }
+
+    .card {
+      max-width: 100%;
+    }
+
+    .carousel-h2 {
+      font-size: 17.5px;
+      padding-left: unset;
+    }
+
+    .carousel-h1 {
+      font-size: 17.5px;
+    }
+
+    .carousel-paragraph {
+      font-size: 15px;
+      padding-left: unset;
+    }
+
+    .carousel-image {
+      max-width: 50%;
+    }
+
+    .bullets li {
+      width: 5px;
+      height: 5px;
+      border: medium none;
+      cursor: pointer;
+      display: inline-block;
+      float: none;
+      border-radius: 1000px;
+    }
+  }
+
+@media only screen and (max-width: 500px){
+    #technologiesText{
+      padding-left: 43px;
+    }
+    .technologiesForm {
+      margin-bottom: 45px;
+    }
+    .white-regular {
+      padding-bottom: 25px;
+      font-size: 22px;
+    }
+  
+    .white-bold {
+      font-size: 26px;
+      padding-bottom: 30px;
+    }
+  
+    .paragraph-white {
+      font-size: 16px;
+      font-weight: 350;
+    }
+
+    .Dedication {
+      padding-bottom:0px;
+    }
+
+    .red-regular-Technologies {
+      font-size: 25px;
+      padding-bottom: 25px;
+      padding-top: 3px;
+    }
+
+    .red-regular-mobile {
+      font-size: 25px;
+    }
+
+    .approach-header {
+       width: 230px;
+    }
+  }
