@@ -24,7 +24,9 @@ body{
     width: 150px;
     height: 48px;
 }
-
+.navbar-expand-lg .navbar-nav .nav-link{
+  padding-right: 1.5rem !important;
+}
 .navbar-nav li {
     padding: 0px 0px 0px 39px;
 }
@@ -60,13 +62,15 @@ body{
 .approach-header{
     width: 650px;
     color: #CF053E !important;
-    font-size: 50px;
-    font-weight: bold;
+    padding-bottom: 50px;
+    font-size: 48px;
+    font-weight: 700;
 }
 
 .approach-paragraph{
     font-size: 30px;
     font-weight: 400;
+    padding-bottom: 50px;
 }
 
 .approach-read-more{
@@ -93,21 +97,21 @@ body{
     padding-bottom: 100px;
 }
 .white-regular{
-  padding-bottom: 70px;
+  padding-bottom: 50px;
   font-size: 40px;
   font-weight: 500;
   color: white;
 }
 .white-bold{
   font-size: 60px;
-  font-weight: 700px;
-  padding-bottom: 40px;
+  font-weight: 700;
+  padding-bottom: 50px;
   color: white;
 }
 .paragraph-white{
-  font-size: 35px;
+  font-size: 33px;
   font-weight: 300;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
   color: white;
 }
 
@@ -196,7 +200,8 @@ background-color: #dd0141 !important;
 .technologiesForm:hover{
   box-shadow: 0 0 10px 0px #000;
   cursor: pointer;
-  background: linear-gradient(261deg, rgb(68 28 36) 0%, rgb(234 30 68) 97%);
+  /* background: linear-gradient(261deg, rgb(68 28 36) 0%, rgb(234 30 68) 97%);*/
+  background: linear-gradient(67deg, rgba(223,17,49,1) 0%, rgba(209,0,62,1) 100%);
 }
 
 .insideFormContainer{
@@ -361,7 +366,13 @@ i.fa {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1036px){
+
+
+    .navbar-nav li a{
+      font-size: 13px !important;
+    }
+
     .approach-left-col{
         position: relative !important;
     }
@@ -410,7 +421,7 @@ i.fa {
    .approach-header{
     padding-bottom: 30px;
     }
-    
+
     .approach-paragraph {
         font-size: 22px !important;
         padding-bottom: 30px;
@@ -419,7 +430,7 @@ i.fa {
     .white-bold {
         font-size: 30px;
     }
-    
+
     .paragraph-white {
         font-size: 22px;
         padding-bottom: 0px;
@@ -457,12 +468,12 @@ i.fa {
         visibility: hidden;
         height: 0px;
     }
-    
+
     .mobileServices{
         visibility: visible;
         height: auto;
     }
-    
+
     .img-thumbnail{
         background-color: #fff0f5 !important;
         border: 4px solid #d31338 !important;
@@ -568,42 +579,59 @@ i.fa {
   }
 
 @media only screen and (max-width: 500px){
+    .navbar-nav li a{
+     font-size: 14px;
+
+    }
+    .white-regular {
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 30px;
+    }
+
+
     #technologiesText{
       padding-left: 43px;
     }
     .technologiesForm {
-      margin-bottom: 45px;
+      margin-bottom: 30px;
     }
-    .white-regular {
-      padding-bottom: 25px;
-      font-size: 22px;
-    }
-  
+
     .white-bold {
-      font-size: 26px;
+      font-size: 22px;
       padding-bottom: 30px;
+      font-weight: 600;
     }
-  
+
     .paragraph-white {
       font-size: 16px;
       font-weight: 350;
+      padding-bottom: 50px;
+      margin: 0;
     }
 
     .Dedication {
       padding-bottom:0px;
     }
 
+    .red-regular-mobile{
+      font-size: 24px;
+     font-weight: 600;
+    }
+
     .red-regular-Technologies {
-      font-size: 25px;
-      padding-bottom: 25px;
-      padding-top: 3px;
+      font-size: 24px;
+      padding-bottom: 30px;
+      padding-top: 30px;
+      font-weight: 600;
     }
 
     .red-regular-mobile {
-      font-size: 25px;
+      font-size: 24px;
     }
 
     .approach-header {
        width: 230px;
+       font-size: 24px !important;
     }
   }
