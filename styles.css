@@ -217,28 +217,118 @@ background-color: #dd0141 !important;
 }
 
 /* Adisa*/
+.Portfolio{
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.formPortfolio{
+  background-image: url(images/IMGPortfolio/cd1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 248px;
+  margin-bottom: 30px;
+  border: 1px solid gainsboro;
+  border-radius: 15px;
+  
+  
+}
+
+.test{
+  visibility: hidden;
+  
+  
+}
+.test-title{
+ color: #FFFFFF;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin: 0 0 5px;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.test-paragraph{
+  color: #FFFFFF;
+  font-size: 15px;
+font-weight: 400;
+left: 20%;
+right: 20%;
+position: absolute;
+letter-spacing: 1px;
+
+}
+
+.formPortfolio:hover > .test{
+  visibility: visible;
+  background-color: #e9adb4;
+ 
+  border-radius: 15px;
+ 
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+ 
+  transition: all 0.4s ease;
+
+  
+  }
+ 
+
+
 .Products {
 	border: 1px solid red;
 	background-color: #fff0f4;
-	padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  
 }
-
-.carousel-h1 {
+.products-h1 {
 	text-align: center;
-	font: normal normal bold 35px/60px Segoe UI;
+  font-size:  40px;
+  
+  font-weight: 700;
+  
 	letter-spacing: 0px;
 	color: #D31338;
-	opacity: 1;
-	padding-bottom: 37px;
+  opacity: 1;
+  padding-bottom: 30px;
+
+
+}
+
+.h1-Portfolio {
+	text-align: center;
+  font-size:  40px;
+  
+  font-weight: 700;
+  
+	letter-spacing: 0px;
+	color: #D31338;
+  opacity: 1;
+  padding-bottom: 30px;
+
+
 }
 
 .carousel-h2 {
 	text-align: left;
-	font: normal normal 600 35 px/67px Segoe UI;
+  font-size:  40px;
+  font-weight: 600;
 	letter-spacing: 0px;
 	color: #000000;
 	opacity: 1;
-	padding-left: 44px;
+  padding-left: 88px;
+  
 }
 
 .h1-white {
@@ -247,23 +337,28 @@ background-color: #dd0141 !important;
 	letter-spacing: 0px;
 	color: #FFFFFF;
 	opacity: 1;
-	padding-bottom: 4%;
+  padding-bottom: 50px;
+
 }
 
 .carousel-paragraph {
-	width: 100%;
+	
 	text-align: left;
-	font: normal normal 20px/40px Segoe UI Emoji;
+ font-family: Segoe UI Emoji;
+  font-size: 30px;
+
 	letter-spacing: 0px;
 	color: #000000;
 	opacity: 1;
-	padding-left: 44px;
+  padding-left: 88px;
+  padding-bottom: 50px;
 }
 
 .carousel-image {
-	width: 100%;
-	height: 100%;
-	border-radius: 2%;
+width: 583px;
+height: 384px;
+border-radius: 8px;
+padding-bottom: 50px;
 }
 
 .bullets {
@@ -292,35 +387,16 @@ background-color: #dd0141 !important;
 }
 
 
-.Portfolio {
-	border: 1px solid red;
-	padding: 20px;
-}
-
-.card {
-	height: 100%;
-	text-align: center;
-}
-
-.card-title {
-	color: white;
-}
-
-.card-text {
-	font-size: 20px;
-	color: white;
-	max-width: fit-content;
-}
 
 
 .Contact {
 	border: 1px solid red;
-	padding: 20px;
+	padding: 50px;
 }
 
 .footer-header {
 	text-align: center;
-	font: normal bold 30px/67px Segoe UI;
+	font-size: 30px ;
 	letter-spacing: 0px;
 	color: #FFFFFF;
 	opacity: 1;
@@ -328,14 +404,14 @@ background-color: #dd0141 !important;
 
 .footer-paragraph {
 	text-align: left;
-	font: italic normal normal 20px/40px Segoe UI;
+	font-size: 20px;
 	letter-spacing: 0px;
 	color: #FFFFFF;
 }
 
 .footer-followus {
 	text-align: left;
-	font: normal normal 30px/40px Segoe UI;
+	font-size:26px;
 	letter-spacing: 0px;
 	color: #FFFFFF;
 	opacity: 1;
@@ -358,17 +434,54 @@ background-color: #dd0141 !important;
 }
 
 i.fa {
-	display: inline-block;
-	border-radius: 60px;
-	border: solid 2px #ffffff;
-	padding: 0.5em 0.6em;
+	
 }
 
 /* MEDIA QUERIES */
+/*max-whith 1036*/
+@media screen and (max-width: 1024px){ 
+ 
+  .Portfolio{
+    padding-left: unset;
+    padding-right: unset;
+  }
+  
+  
+  
+  
 
-@media screen and (max-width: 1036px){
 
+  .carousel-h2 {
+    font-size:40px;
+    padding-left: unset;
+  
+  }
 
+  .products-h1 {
+   
+    font-size: 30px !important;
+    font-weight: 700 !important;
+
+  }
+  .h1-Portfolio{
+    font-size: 30px !important;
+    font-weight: 700 !important;
+  }
+
+  .carousel-paragraph {
+    font-size: 22.5px;
+    padding-left: unset;
+  
+  }
+
+  .carousel-image {
+    max-width: 320px;
+    max-height: 280px;
+  }
+  .h1-white{
+    font-weight: 700;
+    font-size: 30px;
+  }
     .navbar-nav li a{
       font-size: 13px !important;
     }
@@ -389,15 +502,7 @@ i.fa {
         display: none !important;
     }
 
-    .card-title {
-      font-size: 15px;
-    }
-    .card-text {
-      font-size: 10px;
-    }
-    .card {
-      max-width: 100%;
-    }
+    
   }
 
 @media screen and (max-width: 900px) {
@@ -405,7 +510,7 @@ i.fa {
         font-size: 25.5px;
         padding-left: unset;
     }
-    .carousel-h1 {
+    .products-h1 {
         font-size: 25.5px;
     }
     .carousel-paragraph {
@@ -418,6 +523,32 @@ i.fa {
   }
 
 @media only screen and (max-width: 768px){
+  .carousel-h2 {
+    font-size: 25.5px;
+    padding-left: unset;
+    padding-top: unset;
+}
+.products-h1 {
+    font-size: 30px !important;
+    font-weight: 700 !important;
+}
+.h1-Portfolio{
+  font-size: 30px !important;
+  font-weight: 700 !important;
+}
+}
+.h1-white{
+  font-weight: 700 !important;
+  font-size: 30px !important;
+}
+.carousel-paragraph {
+    font-size: 20px;
+    padding-left: unset !important;
+    padding-top: unset !important;
+}
+.carousel-image {
+    max-width: 100%;
+}
    .approach-header{
     padding-bottom: 30px;
     }
@@ -487,6 +618,9 @@ i.fa {
   }
 
 @media screen and (max-width: 600px){
+  .Contact{
+    padding: 15px;
+  }
     .approach-left-col{
         position: relative !important;
     }
@@ -506,6 +640,7 @@ i.fa {
 
     .h1-white {
       font-size: 20px;
+      padding: unset;
     }
 
     .footer-header {
@@ -528,8 +663,8 @@ i.fa {
     }
 
     .footer-icon {
-      font-size: 10px;
-      padding: 1%;
+      font-size: 8px;
+      padding: unset;
     }
 
     .form-row {
@@ -537,34 +672,26 @@ i.fa {
       padding-top: 10px;
     }
 
-    .card-title {
-      font-size: 25px;
-    }
-
-    .card-text {
-      font-size: 20px;
-    }
-
-    .card {
-      max-width: 100%;
-    }
+    
 
     .carousel-h2 {
-      font-size: 17.5px;
-      padding-left: unset;
+      font-size: 26px !important;
+     font-weight: 600;
     }
 
-    .carousel-h1 {
-      font-size: 17.5px;
-    }
+    .products-h1 {
+      font-size: 26px !important; 
+    } 
 
     .carousel-paragraph {
-      font-size: 15px;
+      font-size: 16px !important;
       padding-left: unset;
+      padding-top: unset;
     }
 
     .carousel-image {
-      max-width: 50%;
+      max-width: 320px;
+      max-height: 280px;
     }
 
     .bullets li {
@@ -579,6 +706,22 @@ i.fa {
   }
 
 @media only screen and (max-width: 500px){
+  .h1-white{
+    font-size: 24px !important;
+    font-weight: 600 !important;
+  }
+  .products-h1{
+    font-size: 24px !important;
+    font-weight: 600 !important;
+
+  }
+  .h1-Portfolio{
+    font-size: 24px !important;
+    font-weight: 600 !important;
+  }
+ 
+ 
+
     .navbar-nav li a{
      font-size: 14px;
 
