@@ -18,12 +18,46 @@ a:hover {
 }
 
 /*Single adoptation DIV Containers*/
+.button-form{
+    position: absolute;
+    bottom: 35px;
+    right: 40px;
+    border: 0px;
+    height: 35px;
+    width: 60px;
+    background-color: white !important;
+}
+
+.formPortfolio:hover>.formContent>.button-form:hover {
+    opacity: 0.9;
+    background-color: green;
+    margin-bottom: 15px;
+    transition: 0.3s ease-in;
+    border: 1px solid cornflowerblue;
+    background-color: #f8f8a8 !important;
+}
+
+.formPortfolio:hover>.formContent>.button-form {
+    opacity: 0.8;
+    transition: 0.3s ease-in;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: white !important;
+}
 
 #nav-bar .navbar {
-    min-height: 138px;
-    background-color: #d31338 !important;
+    height: 60px;
+    background-color: rgb(0 0 0 / 70%);
     padding-right: 30px;
+    position: fixed;
+    backdrop-filter: blur(20px);
     padding-left: 30px;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-positioning{
+    margin-bottom: 70px;
 }
 
 .navbar-brand img {
@@ -32,7 +66,10 @@ a:hover {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 13px;
     padding-right: 1.5rem !important;
+    font-weight: 500;
+    color: #eeebeb !important;
 }
 
 .navbar-nav li {
@@ -202,10 +239,10 @@ a:hover {
 }
 
 .technologiesForm:hover {
-    box-shadow: 0 0 10px 0px #000;
+    box-shadow: 0 0 10px 0px black;
     cursor: pointer;
     background: linear-gradient(67deg, rgba(223, 17, 49, 1) 0%, rgba(209, 0, 62, 1) 100%);
-    transition: 0.2s ease-in;
+    transition: 0.2s ease-out;
 }
 
 .insideFormContainer {
@@ -296,7 +333,7 @@ a:hover {
     width: 100%;
     height: 100%;
     opacity: 0.9;
-    transition: 0.4s ease;
+    transition: 0.7s ease;
 }
 
 .Products {
@@ -456,15 +493,54 @@ a:hover {
     font-family: 'Segoe UI';
 }
 
-#border-Forms {
-    border: 2px solid #DD0141;
-    border-radius: 9px;
+.navbar-nav > .nav-item > .nav-link:hover{
+    color: white !important;
+    font-size: 13.5px;
+    transition: 0.1s ease-out;
 }
 
+.carousel-control-next{
+    width: auto !important;
+    padding-right: 75px;
+}
+
+.carousel-control-prev{
+    width: auto !important;
+    padding-left: 75px;
+}
+
+#border-Forms {
+    border: 3px solid #d01e40a8;;
+    box-shadow: -4px 16px 15px 6px #e8e5e5;
+    border-radius: 9px;
+    background-color: white;
+}
+
+.technologies-icons-interactive:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in;
+}
 
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1024px) {
+    #nav-bar .navbar {
+        height: auto;
+        background-color: rgb(0 0 0 / 70%);
+        padding-right: 30px;
+        position: fixed;
+        padding-left: 30px;
+        width: 100%;
+        z-index: 1;
+    }
+    .nav-link{
+        margin-right: -11px;
+    }
+    .nav-link:hover{
+        color: white !important;
+        font-size: 14px !important;
+        transition: 0.1s ease-out;
+    }
     .SecondPage {
         padding-left: unset;
         padding-right: unset;
@@ -539,6 +615,23 @@ a:hover {
 }
 
 @media only screen and (max-width: 768px) {
+    #nav-bar .navbar {
+        height: auto;
+        background-color: rgb(0 0 0 / 70%);
+        padding-right: 30px;
+        position: fixed;
+        padding-left: 30px;
+        width: 100%;
+        z-index: 1;
+    }
+    .nav-link {
+        margin-right: -11px;
+    }
+    .nav-link:hover {
+        color: white !important;
+        font-size: 14px !important;
+        transition: 0.1s ease-out;
+    }
     .SecondPage {
         padding-left: unset;
         padding-right: unset;
@@ -693,7 +786,7 @@ a:hover {
         padding-bottom: 10%;
     }
     .Contact {
-        padding-left: 20%;
+        padding-left: 12%;
         background-repeat: no-repeat;
         background-image: url("images/IMGFooter/Footer.jpg");
         background-size: unset !important;
