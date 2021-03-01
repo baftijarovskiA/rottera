@@ -16,6 +16,7 @@ a:hover {
 }
 
 /*Single adoptation DIV Containers*/
+
 .button-form {
     position: absolute;
     bottom: 35px;
@@ -28,11 +29,10 @@ a:hover {
 
 .formPortfolio:hover>.formContent>.button-form:hover {
     opacity: 0.9;
-    background-color: green;
     margin-bottom: 15px;
     transition: 0.3s ease-in;
     border: 1px solid cornflowerblue;
-    background-color: #f8f8a8 !important;
+
 }
 
 .formPortfolio:hover>.formContent>.button-form {
@@ -40,7 +40,7 @@ a:hover {
     transition: 0.3s ease-in;
     margin-bottom: 10px;
     overflow: hidden;
-    background-color: white !important;
+
 }
 
 #nav-bar .navbar {
@@ -291,7 +291,7 @@ a:hover {
 }
 
 #background-portofolio2 {
-    background-image: url(images/IMGPortfolio/gf.png);
+    background-image: url(images/IMGPortfolio/ls.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -316,7 +316,7 @@ a:hover {
 }
 
 .formTitle {
-    color: #000000;
+    color: #343a40;
     font-size: 22px;
     font-weight: 600;
     text-transform: capitalize;
@@ -328,7 +328,7 @@ a:hover {
 }
 
 .formParagraph {
-    color: #000000;
+    color: #343a40;
     font-size: 16px;
     font-weight: 600;
     left: 20%;
@@ -345,6 +345,14 @@ a:hover {
     height: 100%;
     opacity: 0.9;
     transition: 0.7s ease;
+}
+
+.portfolio-screenshoots {
+
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 3px;
 }
 
 .Products {
@@ -372,7 +380,8 @@ a:hover {
     letter-spacing: 0px;
     color: #D31338;
     opacity: 1;
-    padding-bottom: 30px;
+    padding-top: 30px;
+
 }
 
 .carousel-h2 {
@@ -520,7 +529,6 @@ a:hover {
 
 #border-Forms {
     border: 3px solid #d01e40a8;
-;
     box-shadow: -4px 16px 15px 6px #e8e5e5;
     border-radius: 9px;
     background-color: white;
@@ -530,15 +538,49 @@ a:hover {
     transform: scale(1.1);
     transition: 0.2s ease-in;
 }
-.table-hover tbody tr:hover > td {
-    background-color:#ffebf0
-  }
-  .table > tbody > tr:first-child > td {
+
+.table-hover tbody tr:hover>td {
+    background-color: #ffebf0
+}
+
+.table>tbody>tr:first-child>td {
     border: none;
 }
 
 
-          
+.underline_animation {
+    display: inline-block;
+}
+
+.underline_animation::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: black;
+    transition: 300ms;
+}
+
+.underline_animation:hover::after {
+    width: 100%;
+}
+
+#slider {
+    height: 350px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.carousel-indicators {
+    bottom: -10px;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 1024px) {
     #nav-bar .navbar {
@@ -629,6 +671,16 @@ a:hover {
     .approach-paragraph {
         font-size: 22.5px !important;
     }
+
+    .dot-portfolio {
+        display: none;
+    }
+
+    .portfolio-paragraph {
+        color: #343a40;
+        font-size: 17px;
+
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -648,6 +700,12 @@ a:hover {
 
     .carousel-image {
         max-width: 100%;
+    }
+
+    .portfolio-paragraph {
+
+        font-size: 15px;
+
     }
 }
 
@@ -794,6 +852,17 @@ a:hover {
     .img-thumbnail:hover {
         background-color: #F8D3D9 !important
     }
+
+    .dot-portfolio {
+        display: none;
+    }
+
+    .portfolio-paragraph {
+        color: #343a40;
+        font-size: 14px;
+
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -834,7 +903,7 @@ a:hover {
     }
 
     .formTitle {
-        color: #000;
+        color: #495057;
         font-size: 15px;
         font-weight: 600;
         text-transform: capitalize;
@@ -846,7 +915,7 @@ a:hover {
     }
 
     .formParagraph {
-        color: #000;
+        color: #343a40;
         font-size: 11px;
         font-weight: 400;
         left: 10%;
@@ -950,6 +1019,13 @@ a:hover {
         float: none;
         border-radius: 1000px;
     }
+
+    .portfolio-paragraph {
+        color: #343a40;
+        font-size: 12x;
+
+    }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -1027,4 +1103,11 @@ a:hover {
         width: 230px;
         font-size: 24px !important;
     }
+
+    .portfolio-paragraph {
+        color: #343a40;
+        font-size: 10px;
+
+    }
+
 }
