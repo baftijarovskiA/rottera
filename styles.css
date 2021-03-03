@@ -45,7 +45,7 @@ a:hover {
 
 #nav-bar .navbar {
     height: 90px;
-    background-color: rgb(211 19 56 / 80%);
+    background-color: rgb(211 19 56 / 100%);
     padding-right: 30px;
     position: fixed;
     backdrop-filter: blur(20px);
