@@ -22,7 +22,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 p-0">
-                            <div class="w-100 h-100">
+                            <div class="w-100 h-100 nav-positioning">
                                 <div id="nav-bar">
                                     <nav class="navbar navbar-expand-lg navbar-light">
                                         <a class="navbar-brand" href="index.html"><img src="images/IMGHeader/rottera.png" /></a>
@@ -109,31 +109,44 @@
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                <form class="needs-validation">
-                                    <div class="form-row">
+                                <form action="https://formspree.io/f/xrgowodv" method="POST">
+                                    <div class="form-row ">
                                         <div class="col-sm-12 col-md-6 mb-3">
-                                            <input type="text" class="form-control" id="validationCustom01" placeholder="Name" required />
-                                            <div class="valid-feedback">Looks good!</div>
+                                            <input type="text" class="form-control" 
+                                                placeholder="Name" name="Name" required>
+                                            <div class="valid-feedback">
+                                                Looks good!
+                                            </div>
                                         </div>
                                         <div class="col-sm-12 col-md-6 mb-1">
-                                            <input type="text" class="form-control" id="validationCustom02" placeholder="E-mail" required />
-                                            <div class="valid-feedback">Looks good!</div>
+                                            <input type="text" name="_replyto" class="form-control" 
+                                                placeholder="E-mail" required>
+                                            <div class="valid-feedback">
+                                                Looks good!
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="form-row">
                                         <div class="col-sm-12 col-md-6 mb-3">
-                                            <input type="text" class="form-control" id="validationCustom01" placeholder="Last Name" required />
-                                            <div class="valid-feedback">Looks good!</div>
+                                            <input type="text" name="LastName" class="form-control" id="validationCustom01"
+                                                placeholder="Last Name" required>
+                                            <div class="valid-feedback">
+                                                Looks good!
+                                            </div>
                                         </div>
                                         <div class="col-sm-12 col-md-6 mb-3">
-                                            <input type="text" class="form-control" id="validationCustom02" placeholder="Subject" required />
-                                            <div class="valid-feedback">Looks good!</div>
+                                            <input type="text" name="Subject" class="form-control" id="validationCustom02"
+                                                placeholder="Subject" required>
+                                            <div class="valid-feedback">
+                                                Looks good!
+                                            </div>
                                         </div>
                                         <div class="col-sm-12 col-md-12 mb-4">
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="What can we do for you?"></textarea>
+                                            <textarea   name="Message" class="form-control" id="exampleFormControlTextarea1" rows="5"
+                                                placeholder="What can we do for you?"></textarea>
                                         </div>
                                         <div class="col-sm-12 col-md-12 mb-4">
-                                            <input class="btn" id="footer-button" type="submit" value="Submit" />
+                                         <button class="btn" id="footer-button" type="submit">Send</button>
                                         </div>
                                     </div>
                                 </form>
