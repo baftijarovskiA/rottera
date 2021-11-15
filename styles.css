@@ -311,6 +311,13 @@ a:hover {
     background-size: cover;
 }
 
+#background-portofolio5 {
+    background-image: url(images/IMGPortfolio/sportsmed.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: initial;
+}
+
 .formContent {
     visibility: hidden;
 }
